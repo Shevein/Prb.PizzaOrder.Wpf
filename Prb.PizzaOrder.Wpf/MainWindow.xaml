@@ -1,0 +1,27 @@
+﻿<Window x:Class="Prb.PizzaOrder.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.PizzaOrder.Wpf"
+        mc:Ignorable="d"
+        Title="Pizzaria Deklerck" Height="450" Width="800" Loaded="Window_Loaded" Foreground="Red" Background="#FFBAE5E2">
+    <Grid>
+        <GroupBox Header="Pizza Size" Margin="28,10,467,309"/>
+        <CheckBox x:Name="ckbMedium" Content="Medium" HorizontalAlignment="Left" Margin="129,60,0,0" VerticalAlignment="Top" Checked="CkbMedium_Checked"/>
+        <CheckBox x:Name="ckbLarge" Content="Large" HorizontalAlignment="Left" Margin="225,60,0,0" VerticalAlignment="Top" Checked="CkbLarge_Checked"/>
+        <GroupBox Header="Crust" Margin="31,130,467,206"/>
+        <CheckBox x:Name="ckbNormal" Content="Normal" HorizontalAlignment="Left" Margin="50,174,0,0" VerticalAlignment="Top" Checked="CkbNormal_Checked"/>
+        <CheckBox x:Name="ckbCheesy" Content="Cheesy-Crust" HorizontalAlignment="Left" Margin="180,171,0,0" VerticalAlignment="Top" Checked="CkbCheesy_Checked"/>
+        <GroupBox Header="Pizza" Margin="24,233,467,110"/>
+        <ComboBox x:Name="cmbPizza" HorizontalAlignment="Left" Margin="74,268,0,0" VerticalAlignment="Top" Width="208"/>
+        <Button x:Name="btnOrder" Content="Order this pizza" HorizontalAlignment="Left" Margin="28,340,0,0" VerticalAlignment="Top" Width="305" Height="23" Click="BtnOrder_Click" FontWeight="Bold" FontSize="14" BorderBrush="White" Background="#FFB4E67E"/>
+        <GroupBox Header="Bestelling" Margin="409,47,105,88"/>
+        <CheckBox x:Name="ckbSmall" Content="Small" HorizontalAlignment="Left" Margin="50,60,0,0" VerticalAlignment="Top" Checked="CkbSmall_Checked"/>
+        <Label x:Name="lblOverview" Content="" HorizontalAlignment="Left" Margin="433,69,0,0" VerticalAlignment="Top" Height="256" Width="238" FontSize="20" FontWeight="Bold"/>
+        <TextBlock x:Name="tbkPrice" HorizontalAlignment="Left" Margin="510,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" FontSize="20" Foreground="Red"/>
+        <Label x:Name="lblPrice" Content="Totaal :" HorizontalAlignment="Left" Margin="433,360,0,0" VerticalAlignment="Top" FontSize="20" Foreground="Red"/>
+        <Button x:Name="btnReset" Content="Reset Order" HorizontalAlignment="Left" Margin="28,372,0,0" VerticalAlignment="Top" Height="23" Width="305" Background="#FFB4E67E" BorderBrush="White" FontWeight="Bold" FontSize="14" Foreground="Red" Click="BtnReset_Click"/>
+        <Button x:Name="btnPay" Content="Pay your order" HorizontalAlignment="Left" Margin="593,362,0,0" VerticalAlignment="Top" Height="30" Width="102" Background="#FFB4E67E" BorderBrush="White" Foreground="#FF0C0C0C" FontWeight="Bold" Click="BtnPay_Click"/>
+    </Grid>
+</Window>
